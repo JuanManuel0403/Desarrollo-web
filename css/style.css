@@ -8,16 +8,16 @@
 /* selector de etiqueta */
 a {
     margin-left: 30px ;
-    color: blueviolet;
+    color: rgb(246, 246, 246);
 }
 /*selector por id */
 #option_one,#option_two,#option_thre,#option_four,#option_five {
-    color: rgb(32, 32, 92);
+    color: rgb(255, 255, 255);
 }
  
 /*Selector por clases*/
 .group_option{
-    background-color: rgb(107, 107, 40);
+    background-color: rgb(174, 28, 47);
     margin-top: 5px;
 }
 .group_class{
@@ -25,16 +25,16 @@ a {
 }
 /*Selector por pseudoclase*/
 .group_option:hover{
-    background-color: rgb(3, 3, 3) ;
-    color: chartreuse;
+    background-color: rgb(4, 3, 3) ;
+    color: rgb(142, 219, 65);
 }
 /* selector por atributo */
 [disabled]{
-    background-color: red;
+    background-color: rgb(149, 27, 27);
 }
 /* selectores descendentes */
 #papá{
-    border: 2px solid red;
+    border: 2px solid rgb(255, 254, 254);
     border-radius: 10px;
     margin-right: 100px;
     margin-left: 100px;
@@ -43,13 +43,68 @@ a {
 }
 /* slector adyacente */
 #papá .hermanos + .hermanos{
-    color: darkblue;
+    color: rgb(255, 255, 255);
 }
 /* slector descendente */
 #papá a{
-    color: red;
+    color: rgb(255, 255, 255);
 }
 /* selector hijo */
 #papá > #etiqueta > a{
-    color: #1b0e11;
+    color: #ffffff;
+}
+/* TITULO PARA BOX MODEL */
+#title_box{
+    color: rgb(34, 34, 216);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aqua;
+    text-align: center;
+    /* margin-top:20px; */
+    /* margin-bottom: 20px; */
+    margin: 20px 0;
+    border: 1px dottedrgb(32, 32, 202);
+    border-radius: 10px;
+    padding-bottom: 30px;
+    box-shadow: 0px 0px 10px 1px rgb(2, 4, 2);
+    -webkit-box-shadow: 0px 0px 10px 1px rgb(205, 35, 205);
+-moz-box-shadow: 0px 0px 10px 1px rgba(237,31,237,1);
+box-shadow: 0px 0px 10px 1px rgba(237,31,237,1);
+font-size: 40px;
+letter-spacing: 10px;
+word-spacing: 20px;
+text-transform: lowercase;
+}
+
+#box_father{
+    width: 200%;
+    height: 200px;
+    background-color: #008;
+}
+#box_model{
+    width: 50%;
+    height: 50%;
+    background-color: rgb(203, 152, 59);
+    background-image: url(https://img.freepik.com/fotos-premium/ave-fenix-es-simbolo-fuerza-lealtad_608068-20841.jpg?w=2000 ); width: px; height: 500px;
+    background-size: cover;
+
+    /* margin: 0 auto; */
+    /* text-align: center; */
+}
+
+/* media querys */
+@media (min-width: 800px) and (max-width:1200px){
+    body{
+        background-color: aqua;
+
+    }
+    h1{
+        text-align: center;
+    }
+}
+@media (max-width:799px){
+    body{
+        background-image: url(https://img.freepik.com/fotos-premium/ave-fenix-es-simbolo-fuerza-lealtad_608068-20841.jpg?w=2000 );
+        background-size: cover;
+        background-position: center;
+    }
 }
