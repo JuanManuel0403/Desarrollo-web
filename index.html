@@ -3,34 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_login.css">
     <title>Document</title>
 </head>
 <body>
-    
-    <h1>HOME</h1>
-
-    <a href="./HTML/tablas.html" class="btn">tablas</a>
-    <br>
-    <a href="./HTML/Agrupación.html" class="btn">Agrupación</a>
-    <br>
-    <a href="./HTML/Formulario.html" class="btn">Formulario</a>
-    <br>
-    <a href="./HTML/Multimedia.html" class="btn">Multimedia</a>
-    <br>
-    <a href="./HTML/Semantica.html" class="btn">Semantica</a>
-    <br>
-    <a href="./HTML/Texto.html" class="btn">Texto</a>
-    <br>
-    <a href="./HTML/Estilos.html" class="btn">Estilos</a>
-
-
-
-
-
-
-
-
-
+<div class="background"></div>
+<div class="centering">
+    <form action="" class="my_form">
+        <div class="login_welcome">
+            <img src="https://img.freepik.com/vector-gratis/lindo-astronauta-montando-cohete-agitando-mano-icono-dibujos-animados-ilustracion-concepto-icono-tecnologia-ciencia_138676-2130.jpg" alt="" class="login">
+            <h1>Iniciar Sesion</h1>
+        </div>
+        <div class="text_field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Ingrese su Email" aria-label="email" required>
+            <img src="https://www.svgrepo.com/download/14478/email.svg" alt="Email">
+        </div>
+        <div class="text_field">
+            <label for="password">password</label>
+            <input type="password" id="password" name="password" placeholder="Ingrese su password" aria-label="password" required>
+            <img src="https://www.svgrepo.com/show/84319/password.svg" alt="Password">
+        </div>
+        <input type="submit" value="Login" class="my_form_button">
+        <div class="my_form_actions">
+            <div class="my_form_row">
+                <span>¿olvidaste tu contraseña?</span>
+                <a href="#" title="Recuperar contraseña">Recuperar contraseña</a></my_form_row>
+            </div>
+            <div class="my_form_signup">
+                <a href="#" title="Crear cuenta">Crear cuenta</a>
+            </div>
+                
+        </div>
+    </form>
+</div>
 
 </body>
 </html>

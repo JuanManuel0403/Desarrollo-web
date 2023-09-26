@@ -16,13 +16,36 @@
         }
         #father{
             height: 100vh;
-            display: grid;
-            place-items: center;
+            /* display: grid; */
+            /* place-items: center; */
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            /* flex-wrap: wrap; */
+            flex-direction: row-reverse;
+
+
         }
-        #son{
+        #son, #son_one, #son_two, #son_three{
             background-color:black;
             height: 200px;
             width: 200px;
+            transform: scale(1.2);
+            border-radius: 10px;
+
+        }
+        #son_two{
+            background-color: aquamarine;
+            transform: translate(-5px,-10px);
+            border-radius: 50%;
+        }
+        #son_one{
+            background-color: blue;
+            transform: skew(-5deg,-10deg);
+        }
+        #son_three{
+            background-color: chartreuse;
+            transform:rotate(45deg);
         }
     </style>
 </head>
@@ -31,9 +54,15 @@
         <div id="text_Flex">
             <h1>CLASS FLEXBOX</h1>
         </div>
-        <div id="son">
+        <div id="father">
+            <div id="son"></div>
+            <div id="son_one"></div>
+            <div id="son_two"></div>
+            <div id="son_three"></div>
 
         </div>
+       
+        
     
 </body>
 </html>
